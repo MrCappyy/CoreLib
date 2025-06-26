@@ -1,0 +1,50 @@
+name: CoreLib
+version: ${version}
+main: net.mrcappy.corelib.CoreLibPlugin
+api-version: "1.19"
+author: MrCappy
+description: A comprehensive self-contained developer utility library for Paper plugins
+
+commands:
+  corelib:
+    description: CoreLib main command
+    usage: /corelib [subcommand]
+    aliases: [cl, core]
+    permission: corelib.admin
+  packet:
+    description: Packet manipulation commands
+    usage: /packet <subcommand>
+    permission: corelib.packet
+    aliases: [packets]
+  clutil:
+    description: CoreLib utility commands
+    usage: /clutil <subcommand>
+    permission: corelib.admin
+    aliases: [clu]
+  clevent:
+    description: Event system test commands
+    usage: /clevent <subcommand>
+    permission: corelib.admin
+    aliases: [cle]
+
+permissions:
+  corelib.*:
+    description: All CoreLib permissions
+    default: op
+    children:
+      corelib.admin: true
+      corelib.packet: true
+      corelib.reload: true
+      corelib.debug: true
+  corelib.admin:
+    description: Access to CoreLib admin commands
+    default: op
+  corelib.packet:
+    description: Access to packet manipulation commands
+    default: op
+  corelib.reload:
+    description: Reload CoreLib configuration
+    default: op
+  corelib.debug:
+    description: Access to debug commands
+    default: op
