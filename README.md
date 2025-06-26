@@ -69,30 +69,43 @@ nbt.setInt("custom-damage", 150);
 
 ## Installation
 
-### Maven
-```xml
-<repository>
-    <id>jitpack.io</id>
-    <url>https://jitpack.io</url>
-</repository>
+### Gradle
+**Step 1.** Add JitPack repository to your build file
+```gradle
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
 
+**Step 2.** Add the dependency
+```gradle
+dependencies {
+    implementation 'com.github.mrcappyy:CoreLib:main-SNAPSHOT'
+}
+```
+
+### Maven
+**Step 1.** Add the JitPack repository
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+```
+
+**Step 2.** Add the dependency
+```xml
 <dependency>
     <groupId>com.github.mrcappyy</groupId>
     <artifactId>CoreLib</artifactId>
     <version>main-SNAPSHOT</version>
-    <scope>provided</scope>
 </dependency>
-```
-
-### Gradle
-```kotlin
-repositories {
-    maven { url = uri("https://jitpack.io") }
-}
-
-dependencies {
-    compileOnly("com.github.mrcappyy:CoreLib:main-SNAPSHOT")
-}
 ```
 
 ## Quick Start
