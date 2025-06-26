@@ -16,7 +16,7 @@ import java.util.function.Predicate;
  * 
  * Bukkit's event system is powerful but verbose as fuck.
  * This lets you register lambdas as event handlers like a
- * civilized person in 2024.
+ * civilized person in 2025.
  * 
  * Example:
  * EventBus.on(PlayerJoinEvent.class, e -> {
