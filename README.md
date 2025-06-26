@@ -176,8 +176,6 @@ CoreLib is licensed under the MIT License. See LICENSE file for details.
 ## Support
 
 - **Issues**: [GitHub Issues](https://github.com/mrcappyy/CoreLib/issues)
-- **Discord**: [Join our Discord](https://discord.gg/corelib)
-- **Documentation**: [Wiki](https://github.com/mrcappyy/CoreLib/wiki)
 
 ---
 
